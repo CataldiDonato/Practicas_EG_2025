@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercitación 3 - Enlaces en HTML</title>
+</head>
+<body>
+    <h1>Ejercitación 3 - Diferencias entre enlaces</h1>
+
+    <!-- Enlace simple -->
+    <p><a href="http://www.google.com.ar">Click aquí para ir a Google</a></p>
+    
+    <!-- Enlace que se abre en una nueva pestaña -->
+    <p><a href="http://www.google.com.ar" target="_blank">Click aquí para ir a Google (nueva pestaña)</a></p>
+    
+    <!-- Enlace con atributos adicionales -->
+    <p>
+        <a href="http://www.google.com.ar" type="text/html" hreflang="es" charset="utf-8" rel="help">
+            Click aquí para ir a Google con atributos adicionales
+        </a>
+    </p>
+    
+    <!-- Enlace vacío (#) que no redirige a ninguna parte -->
+    <p><a href="#">Click aquí (no redirige)</a></p>
+    
+    <!-- Enlace a una ancla dentro de la misma página -->
+    <p><a href="#arriba">Click aquí para volver arriba</a></p>
+
+
+
+
+
+    <h2>Ejercitación 3.b - Diferencias en imágenes y enlaces</h2>
+
+    <!-- Imagen seguida de enlace -->
+    <p><img src="im1.jpeg" alt="imagen1" /><a href="http://www.google.com.ar">Click aquí</a></p>
+    
+    <!-- Imagen como enlace con texto afuera -->
+    <p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" /></a> Click aquí</p>
+    
+    <!-- Imagen dentro del enlace con texto incluido -->
+    <p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" />Click aquí</a></p>
+    
+    <!-- Imagen como enlace + texto como enlace -->
+    <p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" /></a> <a href="http://www.google.com.ar">Click aquí</a></p>
+
+    <h2>Ejercitación 3.c - Diferencias entre listas y bloques</h2>
+
+    <!-- Lista desordenada -->
+    <h3>Lista Desordenada (ul)</h3>
+    <ul>
+        <li>xxx</li>
+        <li>yyy</li>
+        <li>zzz</li>
+    </ul>
+
+    <!-- Lista ordenada con números automáticos -->
+    <h3>Lista Ordenada (ol)</h3>
+    <ol>
+        <li>xxx</li>
+        <li>yyy</li>
+        <li>zzz</li>
+    </ol>
+
+    <!-- Lista ordenada con solo un elemento -->
+    <h3>Lista Ordenada con un solo ítem</h3>
+    <ol>
+        <li>xxx</li>
+    </ol>
+
+    <!-- Lista ordenada con el atributo value para empezar desde el 2 -->
+    <h3>Lista Ordenada con valor inicial en 2</h3>
+    <ol>
+        <li value="2">yyy</li>
+    </ol>
+
+    <!-- Lista ordenada con el atributo value para empezar desde el 3 -->
+    <h3>Lista Ordenada con valor inicial en 3</h3>
+    <ol>
+        <li value="3">zzz</li>
+    </ol>
+
+    <!-- Bloque de citas -->
+    <h3>Bloque de Cita (blockquote)</h3>
+    <blockquote>
+        <p>1. xxx<br />
+        2. yyy<br />
+        3. zzz</p>
+    </blockquote>
+
+</body>
+</html>
