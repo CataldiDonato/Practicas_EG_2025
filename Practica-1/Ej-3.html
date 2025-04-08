@@ -1,74 +1,254 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ejercitación 3 - Enlaces en HTML</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Ejercitación 3 - Diferencias entre enlaces</h1>
 
     <p><a href="http://www.google.com.ar">Click aquí para ir a Google</a></p>
-    
-    <p><a href="http://www.google.com.ar" target="_blank">Click aquí para ir a Google (nueva pestaña)</a></p>
-    
+
     <p>
-        <a href="http://www.google.com.ar" type="text/html" hreflang="es" charset="utf-8" rel="help">
-            Click aquí para ir a Google con atributos adicionales
-        </a>
+      <a href="http://www.google.com.ar" target="_blank"
+        >Click aquí para ir a Google (nueva pestaña)</a
+      >
     </p>
-    
+
+    <p>
+      <a
+        href="http://www.google.com.ar"
+        type="text/html"
+        hreflang="es"
+        charset="utf-8"
+        rel="help"
+      >
+        Click aquí para ir a Google con atributos adicionales
+      </a>
+    </p>
+
     <p><a href="#">Click aquí (no redirige)</a></p>
-    
+
     <p><a href="#arriba">Click aquí para volver arriba</a></p>
 
     <h2>Ejercitación 3.b - Diferencias en imágenes y enlaces</h2>
 
-    <p><img src="im1.jpeg" alt="imagen1" /><a href="http://www.google.com.ar">Click aquí</a></p>
-    
-    <p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" /></a> Click aquí</p>
-    
-    <p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" />Click aquí</a></p>
-    
-    <p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" /></a> <a href="http://www.google.com.ar">Click aquí</a></p>
+    <p>
+      <img src="im1.jpeg" alt="imagen1" /><a href="http://www.google.com.ar"
+        >Click aquí</a
+      >
+    </p>
+
+    <p>
+      <a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" /></a>
+      Click aquí
+    </p>
+
+    <p>
+      <a href="http://www.google.com.ar"
+        ><img src="im1.jpg" alt="imagen1" />Click aquí</a
+      >
+    </p>
+
+    <p>
+      <a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" /></a>
+      <a href="http://www.google.com.ar">Click aquí</a>
+    </p>
 
     <h2>Ejercitación 3.c - Diferencias entre listas y bloques</h2>
 
     <h3>Lista Desordenada</h3>
     <ul>
-        <li>xxx</li>
-        <li>yyy</li>
-        <li>zzz</li>
+      <li>xxx</li>
+      <li>yyy</li>
+      <li>zzz</li>
     </ul>
 
     <h3>Lista Ordenada</h3>
     <ol>
-        <li>xxx</li>
-        <li>yyy</li>
-        <li>zzz</li>
+      <li>xxx</li>
+      <li>yyy</li>
+      <li>zzz</li>
     </ol>
 
     <h3>Lista Ordenada con un solo ítem</h3>
     <ol>
-        <li>xxx</li>
+      <li>xxx</li>
     </ol>
 
     <h3>Lista Ordenada con valor inicial en 2</h3>
     <ol>
-        <li value="2">yyy</li>
+      <li value="2">yyy</li>
     </ol>
 
     <h3>Lista Ordenada con valor inicial en 3</h3>
     <ol>
-        <li value="3">zzz</li>
+      <li value="3">zzz</li>
     </ol>
 
     <h3>Bloque de Cita</h3>
     <blockquote>
-        <p>1. xxx<br />
+      <p>
+        1. xxx<br />
         2. yyy<br />
-        3. zzz</p>
+        3. zzz
+      </p>
     </blockquote>
+    <h2>Ejercitación 3.d - Diferencias entre tablas con encabezados</h2>
 
-</body>
+    <!-- Primera tabla con <th> -->
+    <table border="1" width="300">
+      <tr>
+        <th>Columna 1</th>
+        <th>Columna 2</th>
+      </tr>
+      <tr>
+        <td>Celda 1</td>
+        <td>Celda 2</td>
+      </tr>
+      <tr>
+        <td>Celda 3</td>
+        <td>Celda 4</td>
+      </tr>
+    </table>
+
+    <br />
+
+    <!-- Segunda tabla con <td> y estilos manuales -->
+    <table border="1" width="300">
+      <tr>
+        <td>
+          <div align="center">
+            <strong>Colum<br />na1</strong>
+          </div>
+        </td>
+        <td>
+          <div align="center">
+            <strong>Columna<br />2</strong>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>Celda 1</td>
+        <td>Celda 2</td>
+      </tr>
+      <tr>
+        <td>Celda 3</td>
+        <td>Celda 4</td>
+      </tr>
+    </table>
+
+    <p>
+      La primera tabla utiliza la etiqueta "th" para definir encabezados de
+      columna, los cuales aparecen en negrita y centrados automáticamente. La
+      segunda tabla utiliza celdas normales "td" con texto en
+      negrita y centrado, lo
+      que resulta visualmente menos limpio. Además, el texto
+      de los encabezados está cortado, lo que puede
+      afectar la presentación.
+    </p>
+
+    <hr />
+
+    <h2>Ejercitación 3.e - Título de tabla con errores de estructura</h2>
+
+    <!-- Tabla con errores -->
+    <table width="200">
+      <caption>
+        Título (mal ubicado)
+      </caption>
+      <tr>
+        <td bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+      </tr>
+      <tr>
+        <td bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+      </tr>
+    </table>
+
+    <br />
+
+    <!-- Tabla corregida -->
+    <table width="200">
+      <tr>
+        <td colspan="3">
+          <div align="center">Título</div>
+        </td>
+      </tr>
+      <tr>
+        <td bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+      </tr>
+      <tr>
+        <td bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+      </tr>
+    </table>
+
+    <p>
+      En la primera tabla,se define una tabla de 200 pixeles de ancho con un
+      tìtulo de tabla. Se definen tres columnas en una tabla. Las celdas son
+      definidas con el td, el cual tiene un color de fondo gris, y con un texto
+      el cual html usa para dejar un espacio vacio. En la segunda tabla, tiene
+      un resultado similar al anterior, solo que lo logra de manera diferente.
+      Se definen tres columnas en una tabla. Para el titulo en vez de usar la
+      tag caption, se usa un atributo colspan en el td (el cual define celdas),
+      este lo que hace es juntar las tres filas de una celda y con un div
+      alineado al centro simula el titulo del caption. En cuanto a las celdas
+      siguientes, es lo mismo que la tabla anterior.
+    </p>
+
+    <hr />
+
+    <h2>Ejercitación 3.f - Uso de rowspan y colspan</h2>
+
+    <!-- Tabla con rowspan -->
+    <table width="200" border="1">
+      <tr>
+        <td colspan="3"><div align="center">Título</div></td>
+      </tr>
+      <tr>
+        <td rowspan="2" bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+      </tr>
+      <tr>
+        <td bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+      </tr>
+    </table>
+
+    <br />
+
+    <!-- Tabla con colspan -->
+    <table width="200" border="1">
+      <tr>
+        <td colspan="3"><div align="center">Título</div></td>
+      </tr>
+      <tr>
+        <td colspan="2" bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+      </tr>
+      <tr>
+        <td bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+      </tr>
+    </table>
+
+    <p>
+      En la primera tabla se utiliza <code>rowspan="2"</code>, lo que permite
+      que una celda se extienda verticalmente por dos filas, formando una
+      estructura de tipo L. En la segunda tabla se usa
+      <code>colspan="2"</code> para extender una celda horizontalmente,
+      generando una estructura más apaisada. Cada uno cumple una función
+      diferente para organizar la información visualmente.
+    </p>
+  </body>
 </html>
