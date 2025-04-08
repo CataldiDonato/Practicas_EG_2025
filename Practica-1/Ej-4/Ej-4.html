@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="utn-logo.jpg" alt="logo" id="im1" name="im1" width="270" height="135" />
+    <hr>
+    <h1>AÑO 2008</h1>
+    <table border="1" width="600">
+        <tr>
+            <td align="center" colspan="3">Examenes</td>
+        </tr>
+        <tr>
+          <td rowspan="2" align="center">Fecha: <span id="fecha"><?php echo date("d/m/Y"); ?></span></td>
+          <td>Aprobados</td>
+        </tr>
+        <tr>
+            <td>24/30</td>
+        </tr>
+    </table>
+    <ol>
+        <li><a href="http://127.0.0.1:5500/home.html">Enunciado del examen</a></li>
+        <li><a href="https://www.google.com/" target="_blank">Resolución</a></li>
+    </ol>
+    <br>
+    <p>Puede realizar consultas completando el siguiente formulario:</p>
+    <form action="mailto:x@x.com" method="post" enctype="text/plain">
+        <table>
+          <tr>
+            <td><label for="email">e-mail:</label></td>
+            <td><input type="email" id="email" name="email" style="width:200px;"></td>
+          </tr>
+          <tr>
+            <td><label for="mensaje">consulta:</label></td>
+            <td><textarea id="mensaje" name="mensaje" rows="4" cols="30"></textarea></td>
+          </tr>
+          <tr>
+            <td colspan="2" style="text-align:center; padding-top:10px;">
+              <input type="submit" value="ENVIAR" style="padding:5px 15px; margin-right:10px;">
+              <input type="reset" value="BORRAR" style="padding:5px 15px;">
+            </td>
+          </tr>
+        </table>
+    </form>
+      
+    
+    <br>
+    <h2>Enunciado del examen</h2>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;Ejercicio 1: ..............................</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;..................................................</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;Ejercicio 2: ..............................</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;.................................................</p>
+    <br>
+    <p>Para más informaciíon dirigirse a <a href="mailto:cantacto@xx.com" target="_blank">cantacto@xx.com</a></p>
+    <script>
+        const hoy = new Date();
+        const fechaFormateada = hoy.toLocaleDateString(); // formato según idioma
+        document.getElementById("fecha").textContent = fechaFormateada;
+    </script>
+</body>
+</html>
