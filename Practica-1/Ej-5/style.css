@@ -12,8 +12,9 @@
     grid-column: 1/4;
 }
 .element-2{
-    grid-column: 4;
-    align-content: center ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .element-3{
     
