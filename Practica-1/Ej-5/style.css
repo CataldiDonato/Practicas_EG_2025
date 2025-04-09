@@ -1,0 +1,37 @@
+.conteiner{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.element{
+    height: 190px;
+    border: 1px solid black;
+}
+.element-1{
+    
+    grid-column: 1/4;
+}
+.element-2{
+    grid-column: 4;
+    align-content: center ;
+}
+.element-3{
+    
+    grid-column: 1/4;
+}
+.element-4{
+    
+    grid-column: 4;
+
+}
+.element-5{
+    grid-column: 1/5;
+}
+table{
+    border-collapse: collapse;
+    width: 50%;
+    margin: 40px auto;
+}
+th,td{
+    border: 1px solid black;
+}
