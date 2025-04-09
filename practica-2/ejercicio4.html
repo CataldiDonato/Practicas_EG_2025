@@ -1,0 +1,72 @@
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Segmento 1</title>
+    <style>
+        * { color: green; }
+        a:link { color: gray; }
+        a:visited { color: blue; }
+        a:hover { color: fuchsia; }
+        a:active { color: red; }
+        p { font-family: arial, helvetica; font-size: 10px; color: black; }
+        .contenido { font-size: 14px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <p class="contenido" style="font-weight: normal;">
+        Este es un texto ...............
+    </p>
+    <table border="1">
+        <tr>
+            <td>Y esta es una tabla.......</td>
+        </tr>
+        <tr>
+            <td><a href="http://www.google.com.ar">con un enlace</a></td>
+        </tr>
+    </table>
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Segmento 2</title>
+    <style>
+        * { color: green; }
+        a:link { color: gray; }
+        a:visited { color: blue; }
+        a:hover { color: fuchsia; }
+        a:active { color: red; }
+        p { font-family: arial, helvetica; font-size: 10px; color: black; }
+        .contenido { font-size: 14px; font-weight: bold; }
+    </style>
+<body class="contenido">
+    <p> Este es un texto................</p>
+    <table>
+    <tr>
+    <td>Y esta es una tabla.......</td>
+    </tr>
+    <tr>
+    <td><a href="http://www.google.com.ar">con 
+    un enlace</a></td>
+    </tr>
+    </table>
+    </body>
+
+<!-- Diferencias: 
+
+1. En la primera tabla, solo el párrafo específico con clase .contenido se ve afectado por las reglas de esta clase, 
+mientras que en la segunda tabla, toda la estructura del body hereda las propiedades de .contenido, 
+haciendo que el tamaño de fuente y el peso afecten a todos los elementos internos.
+
+2.En la primera tabla, el estilo en línea cambia el peso del texto a normal, mientras que en la segunda tabla, 
+el texto permanece en negrita como se especifica en la clase .contenido.
+
+3. En los dos casos, los enlaces siguen las reglas de estilo de color definidas para los estados de enlace 
+(gris, azul, fucsia, rojo) y no son afectados por el color verde general especificado en * { color: green; } 
+debido a la especificidad de los selectores de enlace. --> 
