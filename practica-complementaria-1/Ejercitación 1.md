@@ -2,7 +2,9 @@
 
 ## ¿Ventajas de HTML5?
 ```
-HTML5 es la última versión del lenguaje HTML, que introduce nuevas características para mejorar la presentación y el rendimiento de las páginas web. Posee un mejor manejo de gráficos y animaciones (canvas). Soporte mejorado para aplicaciones web (geolocalización).
+HTML5 es la última versión del lenguaje HTML, que introduce nuevas características para mejorar la presentación y el rendimiento de las páginas web. 
+Posee un mejor manejo de gráficos y animaciones (canvas). 
+Soporte mejorado para aplicaciones web (geolocalización).
 ```
 
 ## ¿Por qué utilizarlo?
@@ -12,9 +14,9 @@ Es conveniente utilizarlo porque es la norma actual para la creación de conteni
 
 ## ¿Cuales son sus ventajas?
 ```
-   -Es gratuito
-   -Código más ordenado
-   -Compatibilidad en navegadores
-   -Almacenamiento mejorado
-   -HMTL5 y el diseño adaptativo
+-Es gratuito
+-Código más ordenado
+-Compatibilidad en navegadores
+-Almacenamiento mejorado
+-HMTL5 y el diseño adaptativo
 ```
