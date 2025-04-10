@@ -1,4 +1,8 @@
-# Analizar el siguiente código señalando declaraciones y aplicaciones de reglas, y su efecto
+# Practica CSS
+
+# Ejercicio 2.
+
+## Analizar el siguiente código señalando declaraciones y aplicaciones de reglas, y su efecto
 
 ```
 p#normal {

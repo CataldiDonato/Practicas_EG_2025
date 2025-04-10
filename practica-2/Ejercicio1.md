@@ -1,4 +1,6 @@
-# CSS
+# Practica CSS
+
+# Ejercicio 1.
 
 ## ¿Que es CSS y para qué se usa?
 ```
