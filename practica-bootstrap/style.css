@@ -1,0 +1,42 @@
+.box1 {
+    background-color: purple;
+    height: 40px;
+    margin-top: 10px;
+}
+.box2 {
+    background-color: pink;
+    height: 40px;
+    margin-top: 10px;
+}
+.box3 {
+    background-color: green;
+    height: 40px;
+    margin-top: 10px;
+}
+
+.caja1{
+    height: 80px;
+    margin-bottom: 10px;
+    background-color: rgb(129, 27, 27);
+}
+.caja2{
+    height: 100%;
+    min-height: 500px;
+    background-color: rgb(7, 61, 109);
+}
+
+.caja3{
+    height: 60px;
+    margin-bottom: 10px;
+    background-color: salmon;
+}
+.caja4{
+    height: 100px;
+    margin-bottom: 10px;
+    background-color: blueviolet;
+}
+.caja5{
+    height: 120px;
+    margin-bottom: 10px;
+    background-color: crimson;
+}
