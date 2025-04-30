@@ -36,7 +36,21 @@
     background-color: blueviolet;
 }
 .caja5{
-    height: 120px;
-    margin-bottom: 10px;
-    background-color: crimson;
+    margin-top: 20px;
+    background-color: lightblue;
+    min-height: 300px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.header{
+    height: 80px;
+    margin-bottom: 10px;
+    background-color: green;
+}
+.textoHeader{
+    color: white;
+    text-align: center;
+}
+
